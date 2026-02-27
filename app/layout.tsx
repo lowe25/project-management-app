@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
+// will conditionally render navigational components using client helper
+import NavigationWrapper from "./NavigationWrapper";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,7 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <NavigationWrapper>
+          <main>{children}</main>
+        </NavigationWrapper>
       </body>
     </html>
   );

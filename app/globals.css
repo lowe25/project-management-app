@@ -10,6 +10,28 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Flowbite colors */
+  --color-heading: rgb(17 24 39);
+  --color-body: rgb(75 85 99);
+  --color-fg-brand: rgb(31 113 207);
+  --color-brand: rgb(31 113 207);
+  --color-brand-strong: rgb(25 94 168);
+  --color-brand-medium: rgba(31 113 207 / 0.2);
+  --color-default-medium: rgb(209 213 219);
+
+  /* Spacing & border radius */
+  --radius-base: 0.25rem;
+}
+
+@layer components {
+  .rounded-base {
+    @apply rounded-sm;
+  }
+
+  .shadow-xs {
+    @apply shadow-sm;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
