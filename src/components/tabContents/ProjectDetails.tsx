@@ -292,7 +292,7 @@ export default function ProjectDetails() {
               </button>
               <button
                 onClick={handleDeleteTask}
-                className="px-4 py-2 bg-red-600 text-white rounded-lg"
+                className="px-4 py-2 bg-red-600 text-black rounded-lg"
               >
                 Delete
               </button>

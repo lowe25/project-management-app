@@ -17,4 +17,15 @@ First navigate to the backend folder
 - npm start
   First, run the development server:
 
+## Tech Stack
+
+- NextJS - Frontend
+- NestJS - Backend
+- MySql - Database
+
 ## Learn More
+
+Incomplete functionality
+
+- Adding Projects
+- Drag and Drop Feature
