@@ -2,10 +2,7 @@ import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { ProjectsModule } from "./projects/projects.module";
 import { AuthModule } from "./auth/auth.module";
-import * as dotenv from "dotenv";
 import { DataSourceOptions } from "typeorm";
-
-dotenv.config();
 
 const ormConfig: DataSourceOptions = {
   type: "mysql",
