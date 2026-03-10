@@ -18,11 +18,14 @@ export default function Signup() {
     setError("");
     setSuccess("");
     try {
-      const res = await fetch("http://localhost:3001/auth/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password, firstname, lastname }),
-      });
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/auth/signup`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, password, firstname, lastname }),
+        },
+      );
       if (!res.ok) {
         const data = await res.json();
         setError(data.message || "Signup failed");
